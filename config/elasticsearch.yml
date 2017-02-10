@@ -2,6 +2,7 @@ cluster:
   name: ${CLUSTER_NAME}
 
 node:
+  name: ${HOSTNAME}
   master: ${NODE_MASTER}
   data: ${NODE_DATA}
   ingest: ${NODE_INGEST}
@@ -26,3 +27,6 @@ http:
 discovery:
   zen:
     minimum_master_nodes: ${NUMBER_OF_MASTERS}
+    ping:
+      unicast:
+        hosts: ["es-master-1", "es-master-2", "es-master-3" ]
