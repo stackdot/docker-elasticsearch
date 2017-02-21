@@ -19,7 +19,7 @@ bootstrap:
 http:
   enabled: ${HTTP_ENABLE}
   compression: true
-  max_header_size: 16kb
+  max_header_size: 32kb
   cors:
     enabled: ${HTTP_CORS_ENABLE}
     allow-origin: ${HTTP_CORS_ALLOW_ORIGIN}
